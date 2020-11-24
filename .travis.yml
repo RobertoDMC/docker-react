@@ -10,10 +10,3 @@ before_install:
 
 script:
   - docker run -e CI=true friendou/docker-react npm run test
-
-deploy:
-  provider: elasticbeanstalk
-  region: "us-east-1"
-  app: "docker-react"
-  env: "Docker-env"
-  bucket_name;
