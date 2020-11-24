@@ -10,5 +10,6 @@ RUN npm run build
 
 # Use new Nginx image
 FROM nginx
+EXPOSE 80
 # Copy build folder from previous docker buils to new directory
 COPY --from=0 /app/build /usr/share/nginx/html
