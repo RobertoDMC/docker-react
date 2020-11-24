@@ -1,9 +1,7 @@
 language: generic
 os:
   - linux
-matrix:
-  include:
-    - dist: xenial
+dist: xenial
 services:
   - docker
 
